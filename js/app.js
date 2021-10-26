@@ -27,12 +27,12 @@ function addTodo(Event) {
     saveLocalTodos(todoInput.value);
     //Completed button
     const completedButton = document.createElement('button');
-    completedButton.innerHTML = '<img src="../assets/check.svg" alt="Trash icon">';
+    completedButton.innerHTML = '<img src="assets/check.svg" alt="Trash icon">';
     completedButton.classList.add('complete-btn');
     todoDiv.appendChild(completedButton);
     //Trash button
     const trashButton = document.createElement('button');
-    trashButton.innerHTML = '<img src="../assets/trash.svg" alt="Trash icon">';
+    trashButton.innerHTML = '<img src="assets/trash.svg" alt="Trash icon">';
     trashButton.classList.add('trash-btn');
     todoDiv.appendChild(trashButton);
     //Append to the list
@@ -117,12 +117,12 @@ function getTodos() {
         todoDiv.appendChild(newTodo)
         //Completed button
         const completedButton = document.createElement('button');
-        completedButton.innerHTML = '<img src="../assets/check.svg" alt="Trash icon">';
+        completedButton.innerHTML = '<img src="assets/check.svg" alt="Trash icon">';
         completedButton.classList.add('complete-btn');
         todoDiv.appendChild(completedButton);
         //Trash button
         const trashButton = document.createElement('button');
-        trashButton.innerHTML = '<img src="../assets/trash.svg" alt="Trash icon">';
+        trashButton.innerHTML = '<img src="assets/trash.svg" alt="Trash icon">';
         trashButton.classList.add('trash-btn');
         todoDiv.appendChild(trashButton);
         //Append to the list

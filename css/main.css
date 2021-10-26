@@ -37,6 +37,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100%;
+    min-width: -webkit-fill-available;
 }
 
 /* Card */
