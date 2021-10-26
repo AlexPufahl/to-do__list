@@ -32,7 +32,7 @@ body {
 /* Master container */
 .container {
     background-color: var(--black-color);
-    display: block;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
