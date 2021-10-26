@@ -1,0 +1,220 @@
+/* Font-family */
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Variables */
+:root {
+    --black-color: #202020;
+    --white-color: #FAFAFA;
+    --grey-color: #C4C4C4;
+    --green-color: #78E08F;
+}
+
+/* Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    min-height: -webkit-fill-available;
+}
+
+html {
+    height: 100%;
+    font-size: 62.5%;
+}
+
+body {
+    color: var(--black-color);
+    font-family: 'Heebo', sans-serif;
+    min-height: 100%;
+    height: -webkit-fill-available;
+}
+
+/* Master container */
+.container {
+    background-color: var(--black-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Card */
+.card {
+    width: 80%;
+    min-height: fit-content;
+    background: var(--white-color);
+    border-radius: 4rem;
+    overflow: hidden;
+}
+
+/* Header */
+header {
+    color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 8rem;
+}
+
+/* Header <h1> */
+.header-h1 {
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    line-height: 0.95;
+}
+
+/* Header <h2> */
+.header-h2 {
+    font-size: 2.25rem;
+    text-transform: uppercase;
+    font-weight: 200;
+}
+
+/* Form */
+form {
+    display: flex;
+    justify-content: center;
+}
+
+/* Form <div> */
+.form {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 5rem;
+}
+
+/* Form title */
+.form-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+/* Basic styling for the input and the button */
+form input, form button {
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    background: var(--grey-color);
+}
+form input {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width: 50%;
+}
+/* Style's and animation for the button */
+form button {
+    color: var(--white-color);
+    background: var(--black-color);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-right: 2rem;
+}
+form button:hover {
+    background: var(--green-color);
+    color: var(--white-color);
+}
+
+/* Style's for the TO-DO Container */
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+/* Style's for the TO-DO list  */
+.todo-list {
+    min-width: 30%;
+    list-style: none;
+}
+/* Style's of the div 'todo' */
+.todo {
+    margin: 0.5rem;
+    background: #FAFAFA;
+    color: #000;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+/* Style's for the 'li' element of 'todo' */
+.todo li {
+    flex: 1;
+}
+
+/* Todo item */
+.todo-item {
+    padding: 0 0.5rem;
+}
+
+/* Buttons: Complete, Trash */
+.complete-btn {
+    background-color: #78e08f;
+    color: #FAFAFA;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+}
+.trash-btn {
+    background-color: #eb2f06;
+    color: #FAFAFA;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+/* Completed */
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+/* Make icons don't respond to clicks  */
+.todo img {
+    pointer-events: none;
+}
+
+/* Fall animation */
+.fall {
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
+
+/* Styles for the select */
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+}
+.select {
+    position: relative;
+    overflow: hidden;
+}
+select {
+    color:var(--black-color);
+    width: 10rem;
+    cursor: pointer;
+    padding: 1rem;
+}
+.select::after {
+    content: '\25BC';
+    position: absolute;
+    background: var(--black-color);
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.select:hover::after {
+    background: var(--white-color);
+    color: var(--black-color);
+}

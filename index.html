@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO List</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/svg" href="assets/favIcon.svg">
+</head>
+<body>
+    <!-- Master container -->
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1 class="header-h1">to-do</h1>
+            <h2 class="header-h2">List</h2>
+        </header>
+        <!-- Card -->
+        <div class="card">
+            <div class="form">
+                <h2 class="form-title">Add new TO-DO</h2>
+                <!-- Form -->
+                <form>
+                    <input type="text" class="todo-input">
+                    <button class="todo-button" type="submit">
+                        <img src="assets/plus.svg" alt="Plus Icon">
+                    </button>
+                    <div class="select">
+                        <select name="todos" class="filter-todo">
+                            <option value="all">All</option>
+                            <option value="completed">Completed</option>
+                            <option value="uncompleted">Uncompleted</option>
+                        </select>
+                    </div>
+                </form>
+                <!-- To-do container -->
+                <div class="todo-container">
+                    <ul class="todo-list"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
